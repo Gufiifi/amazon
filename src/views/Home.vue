@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="warp">
+        <Header />
+          <main>
+              <router-view></router-view>
+          </main>
+           <Fanhui />
+        <Footers />
+        
+    </div>
+    
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import Header from '@/components/one/headers.vue'
+import Footers from '@/components/one/footers.vue' 
+import Fanhui from "@/components/one/fanhui.vue"
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    components:{
+        Header,
+        Fanhui,
+        Footers,
+    }
 }
 </script>
+
+<style lang='scss' scoped>
+.warp{
+    // background: #eaeaea;
+    width: 100%;
+    // padding: 0 0 .42rem 0;
+}
+
+</style>
