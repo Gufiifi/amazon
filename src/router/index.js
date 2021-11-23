@@ -19,6 +19,16 @@ const routes = [
         path: 'two',
         name: 'Two',
         component: () => import('@/components/one/two'),
+      },
+      {
+        path: 'contone',
+        name: 'Contoney',
+        component: () => import('@/components/contone'),
+      },
+      {
+        path: 'totay',
+        name: 'Totay',
+        component: () => import('@/components/totay'),
       }
     ]
   },
